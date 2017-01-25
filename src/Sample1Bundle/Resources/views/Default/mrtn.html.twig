@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Sample1.</title>
+<style type="text/css">
+#list table, td, th {
+border: 1px #000000 solid;
+border-collapse: collapse;
+text-align: center;
+}
+#list th {
+background-color: rgba(108, 185, 214, 0.59)
+}
+</style>    
+</head>
+<h3>Sample1.</h3>
+<hr>
+<div>name:{{ name }}</div>
+<div>age:{{ age }}</div>
+<div id="list">
+<p>record:</p>
+<table>
+<tr><th>col1</th><th>col2</th><th>col3</th></tr>
+{% for record in records %}
+<tr><td>{{ record.col1 }}</td><td>{{ record.col2 }}</td><td>{{ record.col3 }}</td></tr>
+{% endfor %}
+</table>
+</div>
+
+</html>

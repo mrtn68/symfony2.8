@@ -1,0 +1,8 @@
+sample1:
+    resource: "@Sample1Bundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
